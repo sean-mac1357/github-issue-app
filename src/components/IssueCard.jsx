@@ -1,20 +1,20 @@
-import Dashboard from './Dashboard';
+// import Dashboard from './Dashboard';
 import ReactMarkdown from 'react-markdown/with-html';
 
 const IssueCard = (props) => {
     const { issue } = props;
     return (
-            <div className="Content">
+            <li className="Content">
                 <h2>
                     <a href={issue.url}>
                         {issue.title}
                     </a>
                 </h2>
-                <p className="Paragraph">
+                <div className="Paragraph">
                 <ReactMarkdown children={issue.body} />
-                </p>
+                </div>
                 
-            </div>
+            </li>
     )
 }
 

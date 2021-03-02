@@ -5,7 +5,7 @@ class Dashboard extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            show: false
+            show: false,
         };
         this.showModal = this.showModal.bind(this);
         this.hideModal = this.hideModal.bind(this);

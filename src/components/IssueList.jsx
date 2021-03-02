@@ -24,7 +24,7 @@ class IssueList extends Component {
     render() {
         const { issueData } = this.state;
         return(
-            <>
+            <ul>
                 {!!issueData.length ? (
                     issueData.map((issue, index) => {
                         return <IssueCard issue={issue} key={index} />
@@ -32,7 +32,7 @@ class IssueList extends Component {
                 ) : (
                     <p>Loading Issue Data</p>
                 )}
-            </>
+            </ul>
         );
     }
 
